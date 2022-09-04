@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package grpc.testing;
+
+message Request {
+    string query = 1;
+}
+
+message Response {
+    string query = 1;
+}
+
+service Foo{
+    rpc thisEndpoint(Request) returns(Response);
+}
+
+service Bar{
+    rpc AnotherEndpoint(Request) returns(Response);
+}
