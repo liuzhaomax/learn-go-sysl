@@ -1,0 +1,10 @@
+run:
+    # Skip linter for following files as the issues alreay exist in source repository https://github.com/SSLMate/go-pkcs12.
+    # It doesn't do any change for these issues in this repository. It makes it is easy to merge new changes from source repository.
+    skip-files:
+      - "mac.go"
+      - "mac_test.go"
+      - "crypto.go"
+      - "crypto_test.go"
+      - "pbkdf_test.go"
+      - "pkcs12_test.go"
