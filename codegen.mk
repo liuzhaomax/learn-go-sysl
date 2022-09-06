@@ -4,7 +4,7 @@
 # 2. Set SYSLGO_SYSL to the .sysl file you want to codegen for.
 # 3. Set SYSLGO_PACKAGES to a space-separated list of the Go packages you want
 #    to codegen.
-# 4. For each app you want to codegen, set SYSLGO_APP.<pkg> to the app name.
+# 4. For each app you want to codegen, set SYSLGO_APP.<src> to the app name.
 #    E.g.: SYSLGO_APP.myapp = MyApp.
 # 5. To use local tools, set environment variable NO_DOCKER=1 when running make.
 # 6. If NO_DOCKER=1, set SYSL_GO_ROOT to the local path of the sysl-go repo.
