@@ -12,3 +12,6 @@ clean:
 .PHONY: test
 test: gen-all-servers
 	go test -v ./...
+
+run:
+	go run cmd/Petdemo/main.go config/config.yaml
